@@ -1,0 +1,56 @@
+1.创建一个仓库; git init;
+
+成功之后会出现:
+
+Initialized empty Git repository in E:/随堂/GP6/0504/GP6/.git/
+
+2.把对应的文件放入暂存区之中;
+
+git add + 文件名;
+
+git add -A 全部放入暂存区之中;
+
+3.建立.gitignore文件忽略不想要放入版本管理的内容
+
+4.git commit 放入本地仓库;
+
+git commit -m "注释";
+
+4.2. git commit -m "增加5.2信息提示及翻译"
+[master 0dfe9cb] 增加5.2信息提示及翻译
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+master 0dfe9cb 代表版本号;(在master分支上的 第 0dfe9cb 版本)；
+
+5.查看本地代码状态;(本地代码和本地仓库代码的区别);
+git status 
+
+5.2
+git status
+On branch master
+nothing to commit, working tree clean
+
+表示当前工作区和本地仓库代码一致;
+
+
+6.查看更改的区别;
+git diff;
+
+7.git log 查看详细日志;（提交时间内容,详细版本号,详细信息）
+
+7.2.git reflog 查看还原(提供简易版本号及注释);
+
+8.版本还原;
+
+8.1 git reset --hard +版本号; 
+
+还原到指定版本;
+
+8.2
+
+git reset --hard HEAD^ 
+
+还原到上n个版本;
+
+
+
